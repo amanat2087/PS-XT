@@ -1,0 +1,51 @@
+/* .content-wrap{
+    display: flex;
+}
+.card{
+    margin-left: 20px;
+}
+.sidenav{
+    width : 200px;
+    border: 2px solid black;
+}
+.filter-type{
+    text-align: center;
+}
+.btn{
+    display: flexbox;
+}
+.btn-items{
+    background-color: lightgreen;
+} */
+.cardcontent{
+    height: 350px !important;
+    width: fit-content !important;
+  
+}
+.cardimg{
+        padding: 20px;
+        height: 200px;
+}
+.filter-type{
+    text-align: center;
+}
+.navCard{
+    width: 260px;
+}
+.crd{
+    display: flexbox;
+}
+.btn-items{
+    background-color: lightgreen;
+    margin: 7px;
+} 
+.crdbdy{
+    text-align: left;
+}
+.crdbodytitle{
+    font-weight: bold;
+    color: rgb(99, 99, 228);
+}
+.crdval{
+    color: lightslategray;
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Col, Row, Nav } from 'react-bootstrap';
+import { Container, Col, Row} from 'react-bootstrap';
 import SideNavbar from './SideNavbar';
 import Content from './Content';
 import { getprograms } from '../Redux/action';
@@ -15,13 +15,12 @@ class Dashboard extends Component {
             land_success: null
         }
     }
+    
     componentDidMount = () => {
         this.props.getprograms();
     }
 
     filter = (type, e) => {
-       // console.log(type);
-        debugger;
         if (type === "year") {
             let year = e.target.textContent;
             this.setState({ launch_year: year }, ()=>this.fetchData());

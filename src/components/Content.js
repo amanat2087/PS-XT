@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Container, CardColumns, Row, Col } from 'react-bootstrap';
+import { Card, Container, Row, Col } from 'react-bootstrap';
 import './Dashboard.css';
 
 const Content = (props) => {
@@ -19,7 +19,7 @@ const Content = (props) => {
                                         <span className="crdbodytitle">{`${program.mission_name} #${program.flight_number}`}</span>
                                         <p><b>Mission Ids :</b><span className="crdval">{program.mission_id}</span></p>
                                         <p><b>Launch Year :</b><span className="crdval">{program.launch_year}</span></p>
-                                        <p><b>Successful Launch :</b><span className="crdval">{program.launch_success.toString()}</span></p>
+                                        <p><b>Successful Launch :</b><span className="crdval">{program.launch_success !== null && program.launch_success.toString()}</span></p>
                                         <p><b>Successful Landing :</b><span className="crdval">{program.rocket.first_stage.cores[0].land_success !== null && program.rocket.first_stage.cores[0].land_success.toString()}</span></p>
                                         </div>
                                     </Card.Body>
@@ -29,6 +29,7 @@ const Content = (props) => {
                     }): <div style={{marginLeft: "20px"}}>Data Not Available</div>
                 }
                 </Row>
+                <footer className="footertext">Developed by:</footer>
             </Container>
         </div>
     )

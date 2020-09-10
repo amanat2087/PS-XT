@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = `https://api.spaceXdata.com/v3/launches?limit=10`;
+const url = `https://api.spaceXdata.com/v3/launches?limit=100`;
 
 
 export const getprograms=(params)=>{
